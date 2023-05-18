@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+import Users from './features/users/Users'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="d-flex border-bottom pt-2 pb-2 mb-5">
+        <div className="p-2 flex-grow-1">Redux Store</div>
+        <div>
+          <div>
+            <a className="nav-link" aria-current="page" href="#">
+              Users
+            </a>
+          </div>
+        </div>
+      </div>
+      <Users />
     </div>
-  );
+  )
 }
-
-export default App;
+export default App
